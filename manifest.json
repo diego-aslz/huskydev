@@ -1,0 +1,14 @@
+{
+  "name": "Husky for Developers",
+  "description": "Fills in Service field when generating invoices",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["scripting"],
+  "action": {},
+  "content_scripts": [
+    {
+      "matches": ["https://invoice.husky.io/*"],
+      "js": ["content.js"]
+    }
+  ]
+ }
